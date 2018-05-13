@@ -1,0 +1,19 @@
+p = 3
+a = 2
+
+
+while p <= 100000
+  p1 = p % 10
+  a_p = a ** (p - 1) - 1
+  
+  if p1 != 2 || p1 != 4 || p1 != 5 || p1 != 6 || p1 != 8
+    if a_p % p == 0
+      puts"#{p}"
+      p += 1
+    else
+      p += 1
+    end
+  else
+    p += 1
+  end
+end
